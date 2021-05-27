@@ -5,7 +5,6 @@ import Rating from './Rating'
 
 const Product = ({ product }) => {
     return (
-        <CardGroup style={{width: 'auto'}}>
         <Card className='my-3 p-3 rounded'>
             <Link to={`/product/${product._id}`}>
                 <Card.Img src={product.image} variant='top' />
@@ -30,7 +29,6 @@ const Product = ({ product }) => {
                 </Card.Text>
             </Card.Body>
         </Card>
-        </CardGroup>
     )
 }
 
