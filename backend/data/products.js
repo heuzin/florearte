@@ -1,6 +1,5 @@
 const products = [
     {
-        _id: '1',
         name: 'Brilhante',
         image: '/images/pulseira1.jpg',
         description: 'Variedades de pulseirinhas personalizadas, escolha a sua',
@@ -12,7 +11,6 @@ const products = [
         numReviews: 4
     }, 
     {
-        _id: '2',
         name: 'Colorida',
         image: '/images/pulseira2.jpg',
         description: 'Variedades de pulseirinhas personalizadas, escolha a sua',
@@ -24,7 +22,6 @@ const products = [
         numReviews: 6
     }, 
     {
-        _id: '3',
         name: 'Personalizada',
         image: '/images/pulseira3.jpg',
         description: 'Variedades de pulseirinhas personalizadas, escolha a sua',
@@ -36,7 +33,6 @@ const products = [
         numReviews: 2
     }, 
     {
-        _id: '4',
         name: 'Brinco',
         image: '/images/brinco1.jpg',
         description: 'Variedades de brincos personalizados, escolha o seu',
@@ -48,7 +44,6 @@ const products = [
         numReviews: 4
     }, 
     {
-        _id: '5',
         name: 'Pavao',
         image: '/images/brinco2.jpg',
         description: 'Variedades de brincos personalizados, escolha o seu',
@@ -60,7 +55,6 @@ const products = [
         numReviews: 1
     }, 
     {
-        _id: '6',
         name: 'Cai Orelha',
         image: '/images/pulseira1.jpg',
         description: 'Variedades de brincos personalizados, escolha o seu',
@@ -72,7 +66,6 @@ const products = [
         numReviews: 0 
     } ,
     {
-        _id: '7',
         name: 'Colar',
         image: '/images/colar1.jpg',
         description: 'Variedades de colares personalizados, escolha o seu',
@@ -84,7 +77,6 @@ const products = [
         numReviews: 4
     },
     {
-        _id: '8',
         name: 'Quebra Pescoco',
         image: '/images/colar2.jpg',
         description: 'Variedades de colares personalizados, escolha o seu',
@@ -96,7 +88,6 @@ const products = [
         numReviews: 3
     },
     {
-        _id: '9',
         name: 'Torce Pescoco',
         image: '/images/colar3.jpg',
         description: 'Variedades de colares personalizados, escolha o seu',
