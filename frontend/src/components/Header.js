@@ -15,14 +15,15 @@ const Header = () => {
     }
 
     return (
-        <Navbar bg='primary' expand='lg' variant='dark' collapseOnSelect>  
+        <header>
+        <Navbar bg='dark' expand='lg' variant='dark' collapseOnSelect>  
             <Container>  
                 <LinkContainer to='/'>
                     <Navbar.Brand>Flor&Arte</Navbar.Brand>
                 </LinkContainer>             
                 <Navbar.Toggle aria-controls='basic-navbar-nav' />
                 <Navbar.Collapse id='basic-navbar-nav'>
-                    <Nav style={{marginLeft: 'auto'}}>
+                    <Nav style={{ marginLeft: 'auto' }} className='ml-auto'>
                         <LinkContainer to='/cart'>
                             <Nav.Link>
                                 <i className='fas fa-shopping-cart'></i>Carrinho
@@ -46,6 +47,7 @@ const Header = () => {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
+        </header>
     )
 }
 
