@@ -32,7 +32,7 @@ const CartScreen = ({ match, location, history }) => {
     return (
         <Row>
             <Col md={8}>
-                <h1>Shopping Cart</h1>
+                <h1>Carrinho de Compras</h1>
                 {cartItems.length === 0 ? (
                     <Message>Seu carrinho esta vazio <Link to='/'>Voltar</Link>
                     </Message>
@@ -80,11 +80,12 @@ const CartScreen = ({ match, location, history }) => {
                 <Card>
                     <ListGroup variant='flush'>
                         <ListGroup.Item>
-                            <h2>Subtotal ({cartItems.reduce((acc, item) => acc + item.qty, 0)}) items</h2>
+                            <h2 style={{ letterSpacing: '2px' }}>SUBTOTAL ({cartItems.reduce((acc, item) => acc + item.qty, 0)}) ITENS</h2>
                             ${cartItems.reduce((acc, item) => acc + item.qty * item.price, 0).toFixed(2)}
                         </ListGroup.Item>
                         <ListGroup.Item>
                             <Button 
+                                style={{ width: '100%' }}
                                 type='button' 
                                 className='btn-block' 
                                 disabled={cartItems.length === 0} 
