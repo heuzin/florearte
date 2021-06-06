@@ -1,3 +1,4 @@
+import e from 'express'
 import asynHandler from 'express-async-handler'
 import User from '../models/userModel.js'
 import generateToken from '../utils/generateToken.js'
@@ -112,11 +113,27 @@ const getUsers = asynHandler(async(req, res) => {
 
     res.json(users)
 })
+// @desc    Detel user
+// @route   GET /api/users/:id
+// @access  Private/Admin
+const deleteUser = asynHandler(async(req, res) => {
+    const user = await User.findById(req.params.id)
+
+    if(user) {
+        await user.remove()
+        res.json({ message: 'Usuario excluido' })
+    } else {
+        res.status(404)
+        throw new Error('User not found')
+    }
+})
+
 
 export {
     authUser,
     registerUser,
     getUserProfile,
     updateUserProfile,
-    getUsers
+    getUsers,
+    deleteUser
 }
