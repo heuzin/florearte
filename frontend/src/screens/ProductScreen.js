@@ -12,6 +12,8 @@ const ProductScreen = ({ history, match }) => {
 
     const dispatch = useDispatch()
 
+    const addDecimals = num => (Math.round(num * 100) / 100).toFixed(2)
+
     const productDetails = useSelector(state => state.productDetails)
     const { loading, error, product } = productDetails
 
@@ -44,7 +46,7 @@ const ProductScreen = ({ history, match }) => {
                                 <Rating value={product.rating} text={`${product.numReviews} reviews`} />
                             </ListGroup.Item>
                             <ListGroup.Item>
-                                Preço: {product.price}R$
+                                Preço: {addDecimals(product.price)}R$
                             </ListGroup.Item>
                             <ListGroup.Item>
                                 Descrição: {product.description}
@@ -58,7 +60,7 @@ const ProductScreen = ({ history, match }) => {
                                     <Row>
                                         <Col>Preço:</Col>
                                         <Col>
-                                            <strong>{product.price}R$</strong>
+                                            <strong>{addDecimals(product.price)}R$</strong>
                                         </Col>
                                     </Row>
                                 </ListGroup.Item>

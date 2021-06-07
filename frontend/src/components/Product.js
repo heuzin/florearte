@@ -4,6 +4,8 @@ import { Card } from 'react-bootstrap'
 import Rating from './Rating'
 
 const Product = ({ product }) => {
+    const addDecimals = num => (Math.round(num * 100) / 100).toFixed(2)
+
     return (
         <Card className='my-3 p-3 rounded'>
             <Link to={`/product/${product._id}`}>
@@ -25,7 +27,7 @@ const Product = ({ product }) => {
                 </Card.Text>
 
                 <Card.Text as='h3'>
-                    {product.price}R$
+                    {addDecimals(product.price)}R$
                 </Card.Text>
             </Card.Body>
         </Card>

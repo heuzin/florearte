@@ -16,6 +16,8 @@ const ProfileScreen = ({ history, location }) => {
 
     const dispatch = useDispatch()
 
+    const addDecimals = num => (Math.round(num * 100) / 100).toFixed(2)
+
     const userDetails = useSelector(state => state.userDetails)
     const { loading, error, user } = userDetails
 
@@ -123,7 +125,7 @@ const ProfileScreen = ({ history, location }) => {
                                 <tr key={order._id}>
                                     <td>{order._id}</td>
                                     <td>{order.createdAt.substring(0, 10)}</td>
-                                    <td>{order.totalPrice}</td>
+                                    <td>{addDecimals(order.totalPrice)}R$</td>
                                     <td>
                                         {order.ispaid ? (
                                                 order.paidAt.substring(0, 10)
