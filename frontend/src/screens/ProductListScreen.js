@@ -44,7 +44,7 @@ const ProductListScreen = ({ history, match }) => {
                 <Col>
                     <h1>Produtos</h1>
                 </Col>
-                <Col className='text-right'>
+                <Col style={{ textAlign: 'end'}}>
                     <Button className='my-3' onClick={createProductHandler}>
                         <i className='fas fa-plus'></i> Adicionar Produto
                     </Button>
