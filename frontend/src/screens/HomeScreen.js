@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col } from 'react-bootstrap'
 import Product from '../components/Product'
 import { listProducts } from '../actions/productActions'
+import ProductCarousel from '../components/ProductCarousel'
 import Paginate from '../components/Paginate'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
@@ -14,7 +15,7 @@ const HomeScreen = ({ match }) => {
 
     const dispatch = useDispatch()
 
-    const productList = useSelector(state => state.productList)
+    const productList = useSelector((state) => state.productList)
     const { loading, error, products, page, pages } = productList
 
     useEffect(() => {
@@ -23,6 +24,7 @@ const HomeScreen = ({ match }) => {
 
     return (
         <div>
+            {!keyword && <ProductCarousel />}
             <h1>Ultimos Produtos</h1>
             {loading ? ( 
                 <Loader />
