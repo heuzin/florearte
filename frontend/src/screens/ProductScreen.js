@@ -163,18 +163,18 @@ const ProductScreen = ({ history, match }) => {
                                                         <option value='2'>2 - Razoável</option>
                                                         <option value='3'>3 - Bom</option>
                                                         <option value='4'>4 - Muito Bom</option>
-                                                        <option value='5'>5 - Exelente...</option>
+                                                        <option value='5'>5 - Exelente</option>
                                                 </Form.Control>
                                             </Form.Group>
-                                            <Form.Group controlId='comment'>
-                                                <Form.Label>Commentario</Form.Label>
+                                            <Form.Group controlId='comment' style={{ paddingTop: '10px' }}>
+                                                <Form.Label>Comentario</Form.Label>
                                                 <Form.Control 
                                                     as='textarea' 
                                                     row='3' value={comment} 
                                                     onChange={(e) => setComment(e.target.value)}
                                                 ></Form.Control>
                                             </Form.Group>
-                                            <Button type='submit' variant='primary'>
+                                            <Button style={{ marginTop: '10px' }} type='submit' variant='primary'>
                                                 Enviar
                                             </Button>
                                         </Form>
