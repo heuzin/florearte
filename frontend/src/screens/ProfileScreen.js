@@ -127,7 +127,7 @@ const ProfileScreen = ({ history, location }) => {
                                     <td>{order.createdAt.substring(0, 10)}</td>
                                     <td>{addDecimals(order.totalPrice)}R$</td>
                                     <td>
-                                        {order.ispaid ? (
+                                        {order.isPaid ? (
                                                 order.paidAt.substring(0, 10)
                                             ) : (
                                                 <i className='fas fa-times' style={{color: 'red'}}></i>
@@ -141,7 +141,7 @@ const ProfileScreen = ({ history, location }) => {
                                         )}
                                     </td>
                                     <td>
-                                        <LinkContainer to={`/orders/${order._id}`}>
+                                        <LinkContainer to={`/order/${order._id}`}>
                                                 <Button className='btn-sm' variant='light'>Detalhes</Button>
                                         </LinkContainer>
                                     </td>
