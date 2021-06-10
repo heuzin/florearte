@@ -1,6 +1,6 @@
 const products = [
     {
-        name: 'Brilhante',
+        name: 'Pulseirinhas Coloridas Personalizadas',
         image: '/images/pulseira1.jpg',
         description: 'Variedades de pulseirinhas personalizadas, escolha a sua',
         brand: 'Flor&Arte',
@@ -11,7 +11,7 @@ const products = [
         numReviews: 4
     }, 
     {
-        name: 'Colorida',
+        name: 'Pulseirinhas Coloridas com Sorrizinho',
         image: '/images/pulseira2.jpg',
         description: 'Variedades de pulseirinhas personalizadas, escolha a sua',
         brand: 'Flor&Arte',
@@ -22,7 +22,7 @@ const products = [
         numReviews: 6
     }, 
     {
-        name: 'Personalizada',
+        name: 'Pulseirinhas Coloridas Simples',
         image: '/images/pulseira3.jpg',
         description: 'Variedades de pulseirinhas personalizadas, escolha a sua',
         brand: 'Flor&Arte',
@@ -33,7 +33,7 @@ const products = [
         numReviews: 2
     }, 
     {
-        name: 'Brinco',
+        name: 'Brinco de Argola Personalizado',
         image: '/images/brinco1.jpg',
         description: 'Variedades de brincos personalizados, escolha o seu',
         brand: 'Flor&Arte',
@@ -44,7 +44,7 @@ const products = [
         numReviews: 4
     }, 
     {
-        name: 'Pavao',
+        name: 'Brinco de Tarrachinha Colorido',
         image: '/images/brinco2.jpg',
         description: 'Variedades de brincos personalizados, escolha o seu',
         brand: 'Flor&Arte',
@@ -55,7 +55,7 @@ const products = [
         numReviews: 1
     }, 
     {
-        name: 'Cai Orelha',
+        name: 'Brinco de Argola Personalizado',
         image: '/images/pulseira1.jpg',
         description: 'Variedades de brincos personalizados, escolha o seu',
         brand: 'Flor&Arte',
@@ -66,7 +66,7 @@ const products = [
         numReviews: 0 
     } ,
     {
-        name: 'Colar',
+        name: 'Colar de Buque',
         image: '/images/colar1.jpg',
         description: 'Variedades de colares personalizados, escolha o seu',
         brand: 'Flor&Arte',
@@ -77,7 +77,7 @@ const products = [
         numReviews: 4
     },
     {
-        name: 'Quebra Pescoco',
+        name: 'Colar Personalizado Colorido',
         image: '/images/colar2.jpg',
         description: 'Variedades de colares personalizados, escolha o seu',
         brand: 'Flor&Arte',
@@ -88,7 +88,7 @@ const products = [
         numReviews: 3
     },
     {
-        name: 'Torce Pescoco',
+        name: 'Colar Simples Colorido',
         image: '/images/colar3.jpg',
         description: 'Variedades de colares personalizados, escolha o seu',
         brand: 'Flor&Arte',
